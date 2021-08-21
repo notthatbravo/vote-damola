@@ -1,0 +1,25 @@
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: $heading-color;
+}
+
+::selection {
+	background: $heading-color;
+	color: white;
+}
+
+section {
+	padding: 10% 5%;
+	overflow: hidden;
+
+	h2 {
+		font-size: 1.8em;
+        font-weight: 500;
+		font-family: 'Roboto Condensed', sans-serif;
+		color: $heading-color;
+	}
+}
