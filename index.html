@@ -33,6 +33,7 @@
         <!-- Animate on Scroll Library -->
         <!-- https://github.com/michalsnik/aos -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     </head>
     <body>
@@ -48,14 +49,14 @@
 
 
         <section class="hero" id="top">
-            <div class="carousel-indicators">
+            <div class="carousel-indicators" data-aos="fade-left" data-aos-duration = "600">
                     <span class="active">01</span>
                     <span>02</span>
                     <span>03</span>
             </div>
 
             <div class="slide-container active">
-                <h1>
+                <h1 data-aos="fade-up">
                     Introducing a New Wave
                     <span class="bold">of ULES Academics</span>
                 </h1>
@@ -79,15 +80,15 @@
 
         <!-- About -->
         <section class="about">
-            <img src="assets/img/2.jpg" alt="Damola looking sleek">
+            <img src="assets/img/2.jpg" alt="Damola looking sleek, as always" loading = "lazy" data-aos="fade-right">
             <h2>Who is Damola Agboola?</h2>
-            <p>Damola is a penultimate student of Chemical Engineering. He has a plethora of experience serving under ULES and beyond.</p>
+            <p data-aos="fade-up">Damola is a penultimate student of Chemical Engineering. He has a plethora of experience serving under ULES and beyond.</p>
 
-            <p>He has demonstrated strong leadership in the possibility of situations and has a wealth of experience and exposure working with diverse people from different walks of life.</p>
+            <p data-aos="fade-up">He has demonstrated strong leadership in the possibility of situations and has a wealth of experience and exposure working with diverse people from different walks of life.</p>
 
-            <p>He is a data analyst and <a href="https://tableau.com" target="_blank" rel="noreferrer noopener">Tableau</a> student ambassador.</p>
+            <p data-aos="fade-up">He is a data analyst and <a href="https://tableau.com" target="_blank" rel="noreferrer noopener">Tableau</a> student ambassador.</p>
 
-            <p>He is a great listener and <b>#ThePeoplePerson</b>.</p>
+            <p data-aos="fade-up">He is a great listener and <b>#ThePeoplePerson</b>.</p>
         </section>
 
 
@@ -131,9 +132,71 @@
 
         <section class="manifesto">
             <h2>Key Focus</h2>
+            <p id="subheading">Hand-in-Hand with other executives,</p>
+
+            <div class="flex container">
+                <div class="card-container" data-aos="fade-up">
+                    <div class="inner-container">
+                        <div class="flip-card-front">
+                            <h4>1</h4>
+                            <h3>Society Development</h3>
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>We would work hard to define our roles in the council by developing the system in terms of leadership. We would be the voice of the people, address welfare concerns and look for new ways for the society to thrive.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container" data-aos="fade-up" data-aos-delay="500">
+                    <div class="inner-container">
+                        <div class="flip-card-front">
+                            <h4>2</h4>
+                            <h3>Communication Relations</h3>
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>We are going to enhance our communication channels to ULESites for easy reach. One way is rolling out bulk SMS for only important information.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="inner-container">
+                        <div class="flip-card-front">
+                            <h4>3</h4>
+                            <h3>Academic & Social&nbsp;Events</h3>
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>This is very crucial as they create good memories for your stay. We would ensure to delegate the best persons, and collaborate for our events from PAADC, ECX, ARB, ULES Oratory, ELD, Movie Night, Social Night, Sports Festival, Faculty Week, Dinner & Awards, SDG awareness & campaign, and many more.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container" data-aos="fade-up" data-aos-delay="1500">
+                    <div class="inner-container">
+                        <div class="flip-card-front">
+                            <h4>4</h4>
+                            <h3>Semester Report</h3>
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>In as much as we would be working hard at the goals set, we would also give a semester report on our activities, finances, and events. This is important for transparency and growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
+        <section class="reviews">
+            <h2>What people have to say</h2>
+        </section>
+
+
+        <!-- Animate On Scroll Library -->
+        <script>AOS.init();</script>
 
         <script>
             // Back to top button
