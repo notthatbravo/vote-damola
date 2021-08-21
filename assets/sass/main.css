@@ -90,7 +90,7 @@ header {
   border-bottom: 3px solid #004aad;
 }
 
-div.back-to-top {
+div#back-to-top {
   position: fixed;
   bottom: 5%;
   right: 2.5%;
@@ -102,10 +102,11 @@ div.back-to-top {
   background: #004aad;
   border-radius: 50px;
   font-size: 1.3em;
+  opacity: 0;
   transition: 0.4s ease-in-out;
 }
 
-div.back-to-top:hover {
+div#back-to-top:hover {
   color: black;
   color: #004aad;
   background: #dcba3c;
@@ -218,6 +219,10 @@ section.timeline div.container div::before {
   height: 60px;
   border: 5px solid #004aad;
   border-radius: 40px;
+  background-image: url("../img/tick.svg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 section.timeline div.container div::after {
   content: "";
