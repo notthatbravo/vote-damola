@@ -90,6 +90,27 @@ header {
   border-bottom: 3px solid #004aad;
 }
 
+div.back-to-top {
+  position: fixed;
+  bottom: 5%;
+  right: 2.5%;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background: #004aad;
+  border-radius: 50px;
+  font-size: 1.3em;
+  transition: 0.4s ease-in-out;
+}
+
+div.back-to-top:hover {
+  color: black;
+  color: #004aad;
+  background: #dcba3c;
+}
+
 section.hero {
   padding-top: 10em;
   color: white;
@@ -178,8 +199,9 @@ section.timeline div.container div {
 }
 section.timeline div.container div h3 {
   margin-bottom: 1%;
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 500;
+  font-family: "Roboto Condensed", sans-serif;
 }
 section.timeline div.container div h4 {
   font-size: 1.1em;
@@ -194,20 +216,32 @@ section.timeline div.container div::before {
   left: 20%;
   width: 60px;
   height: 60px;
-  border: 1px solid #004aad;
+  border: 5px solid #004aad;
   border-radius: 40px;
 }
 section.timeline div.container div::after {
   content: "";
   position: absolute;
-  left: 22%;
+  left: 22.2%;
   width: 5px;
   height: 60px;
   background: #004aad;
   border-radius: 40px;
 }
+section.timeline div.container div:last-of-type {
+  margin-bottom: 0;
+}
 section.timeline div.container div:last-of-type::after {
   display: none;
+}
+
+section.manifesto {
+  color: white;
+  background: #1d63c7;
+}
+section.manifesto h2 {
+  color: white;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

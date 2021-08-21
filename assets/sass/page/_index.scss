@@ -1,3 +1,25 @@
+div.back-to-top {
+    position: fixed;
+    bottom: 5%;
+    right: 2.5%;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: $dark-blue;
+    border-radius: 50px;
+    font-size: 1.3em;
+    transition: 0.4s ease-in-out;
+}
+
+div.back-to-top:hover {
+    color: black;
+    color: $dark-blue;
+    background: $bright-yellow;
+}
+
+
 section.hero {
     padding-top: 10em;
     color: white;
@@ -111,8 +133,9 @@ section.timeline {
 
             h3 {
                 margin-bottom: 1%;
-                font-size: 1.4em;
+                font-size: 1.5em;
                 font-weight: 500;
+                font-family: 'Roboto Condensed', sans-serif;
             }
 
             h4 {
@@ -131,22 +154,38 @@ section.timeline {
             left: 20%;
             width: 60px;
             height: 60px;
-            border: 1px solid $dark-blue;
+            border: 5px solid $dark-blue;
             border-radius: 40px;
         }
 
         div::after{
             content: '';
             position: absolute;
-            left: 22%;
+            left: 22.2%;
             width: 5px;
             height: 60px;
             background: $dark-blue;
             border-radius: 40px;
         }
 
+
+        div:last-of-type {
+            margin-bottom: 0;
+        }
+
         div:last-of-type::after {
             display: none;
         }
+    }
+}
+
+
+section.manifesto {
+    color: white;
+    background: $heading-color;
+
+    h2 {
+        color: white;
+        text-align: center;
     }
 }
