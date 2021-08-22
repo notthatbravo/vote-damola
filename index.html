@@ -315,53 +315,14 @@
         <!-- Animate On Scroll Library -->
         <script>AOS.init();</script>
 
+        <!-- Carousel -->
+        <script src="assets/scripts/carousel.js" charset="utf-8"></script>
 
         <!-- Preloader -->
-        <!-- Copied Code. No idea how it works -->
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-    		$(document).ready(function(){
-    		});
-    		$("nav div a.a").on("click" , function(e){
-    		e.preventDefault();
-    		$("body , html").animate({
-    		  scrollTop: $(this.hash).offset().top
-    		} , 1000);
-    		});
-    		  // Preloader
-    			$(window).on('load', function() {
-    			  if ($('#preloader').length) {
-    				$('#preloader').delay(10000).fadeOut('slow', function() {
-    				  $(this).remove();
-    				});
-    			  }
-    			});
-    	</script>
+        <script src="assets/scripts/preloader.js" charset="utf-8"></script>
 
-        <!-- disable preloader manually -->
-        <script type="text/javascript">
-            disablePreloaderBtn = document.querySelector('#disable-preloader-btn');
-            preloader = document.querySelector('#preloader');
-
-            disablePreloaderBtn.addEventListener('click', function() {
-                preloader.classList.toggle('hidden');
-            })
-        </script>
-
-
-        <script>
-            // Back to top button
-            button = document.getElementById("back-to-top");
-
-            // When the user scrolls down 100px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            function scrollFunction() {
-              if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                button.style.opacity = "1";
-              } else {
-                button.style.opacity = "0";
-              }
-            }
-        </script>
+        <!-- Back to top -->
+        <script src="assets/scripts/back-to-top.js" charset="utf-8"></script>
     </body>
 </html>
