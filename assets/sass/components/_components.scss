@@ -38,3 +38,22 @@ section.blue-bg {
         text-align: center;
     }
 }
+
+
+button {
+	display: block;
+	height: 3.5em;
+	margin: auto;
+	border: 0;
+	border-radius: 5px;
+	outline-width: 1px;
+	color: white;
+	background: $dark-brown;
+	cursor: pointer;
+	transition: 0.4s ease-in-out;
+}
+
+button:hover {
+	border: 1px solid $dark-brown;
+	background: transparent;
+}
