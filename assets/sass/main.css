@@ -247,6 +247,7 @@ section.timeline div.container div {
 }
 section.timeline div.container div h3 {
   margin-bottom: 1%;
+  color: #21130d;
   font-size: 1.5em;
   font-weight: 500;
   font-family: "Roboto Condensed", sans-serif;
@@ -397,6 +398,42 @@ section.join-group a button {
 }
 section.join-group a button:hover {
   border: 1px solid #21130d;
+  background: transparent;
+}
+
+section.newsletter h2 {
+  text-align: center;
+}
+section.newsletter form {
+  text-align: center;
+}
+section.newsletter form input {
+  width: 20em;
+  height: 3em;
+  margin: 2.5% 0;
+  padding: 0 2.5%;
+  border: 1px solid #21130d;
+  border-radius: 10px;
+}
+section.newsletter form ::placeholder {
+  color: #21130d;
+}
+section.newsletter form button {
+  display: block;
+  width: 8em;
+  height: 3.5em;
+  margin: auto;
+  border: 0;
+  border-radius: 5px;
+  outline-width: 1px;
+  color: white;
+  background: #21130d;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+section.newsletter form button:hover {
+  border: 1px solid #21130d;
+  color: #21130d;
   background: transparent;
 }
 

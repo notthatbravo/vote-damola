@@ -135,6 +135,7 @@ section.timeline {
 
             h3 {
                 margin-bottom: 1%;
+                color: $dark-brown;
                 font-size: 1.5em;
                 font-weight: 500;
                 font-family: 'Roboto Condensed', sans-serif;
@@ -322,6 +323,49 @@ section.join-group {
 
         button:hover {
             border: 1px solid $dark-brown;
+            background: transparent;
+        }
+    }
+}
+
+
+section.newsletter {
+    h2 {
+        text-align: center;
+    }
+    form {
+        text-align: center;
+
+        input {
+            width: 20em;
+            height: 3em;
+            margin: 2.5% 0;
+            padding: 0 2.5%;
+            border: 1px solid $dark-brown;
+            border-radius: 10px;
+        }
+
+        ::placeholder {
+            color: $dark-brown;
+        }
+
+        button {
+            display: block;
+            width: 8em;
+            height: 3.5em;
+            margin: auto;
+            border: 0;
+            border-radius: 5px;
+            outline-width: 1px;
+            color: white;
+            background: $dark-brown;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+        }
+
+        button:hover {
+            border: 1px solid $dark-brown;
+            color: $dark-brown;
             background: transparent;
         }
     }
