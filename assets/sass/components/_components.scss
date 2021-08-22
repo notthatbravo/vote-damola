@@ -23,3 +23,18 @@ section {
 		color: $heading-color;
 	}
 }
+
+
+section.blue-bg {
+	color: white;
+    background: $heading-color;
+
+    h2 {
+        color: white;
+        text-align: center;
+    }
+
+    p#subheading {
+        text-align: center;
+    }
+}

@@ -1,6 +1,6 @@
 div#back-to-top {
     position: fixed;
-    bottom: 5%;
+    bottom: 10%;
     right: 2.5%;
     display: grid;
     place-items: center;
@@ -187,18 +187,6 @@ section.timeline {
 
 
 section.manifesto {
-    color: white;
-    background: $heading-color;
-
-    h2 {
-        color: white;
-        text-align: center;
-    }
-
-    p#subheading {
-        text-align: center;
-    }
-
     div.card-container {
         flex: 20%;
         margin: 10% 2.5% 5%;
@@ -306,6 +294,35 @@ section.testimonials {
                 margin-top: 10%;
                 font-size: 0.92em;
             }
+        }
+    }
+}
+
+
+section.join-group {
+    padding: 5%;
+
+    a {
+        display: block;
+        width: 15em;
+        margin: 5% auto 0;
+        text-align: center;
+
+        button {
+            width: 100%;
+            height: 3em;
+            border: 0;
+            border-radius: 5px;
+            outline-width: 1px;
+            color: white;
+            background: $dark-brown;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+        }
+
+        button:hover {
+            border: 1px solid $dark-brown;
+            background: transparent;
         }
     }
 }
