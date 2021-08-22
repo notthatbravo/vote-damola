@@ -1,3 +1,74 @@
+/*Styling the Preloader*/
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 20;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+	overflow: hidden;
+	background: #fff;
+
+    div#load-progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 10px;
+        background: $dark-blue;
+        animation-name: loading;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
+
+	button {
+		position: absolute;
+		top: 2em;
+		right: 5%;
+		width: 15em;
+		height: 3.5em;
+		border: 1px solid $dark-brown;
+		border-radius: 5px;
+		color: $dark-brown;
+		outline-color: $dark-brown;
+		background: transparent;
+		font-size: 1em;
+		font-weight: 500;
+		cursor: pointer;
+		transition: 0.4s ease-in-out;
+	}
+
+	button:hover {
+		color: white;
+		background: $dark-brown;
+	}
+
+
+    h1 {
+        color: $dark-blue;
+        font-size: 8em;
+    }
+
+    div.details {
+        text-align: center;
+
+        p {
+            font-size: 2em;
+        }
+    }
+}
+
+
+#preloader.hidden {
+    display: none;
+}
+
+
+// Back to top button
 div#back-to-top {
     position: fixed;
     bottom: 10%;

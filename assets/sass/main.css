@@ -56,6 +56,15 @@ img {
     font-size: 40px;
   }
 }
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -134,6 +143,67 @@ header {
   padding: 1% 5%;
   background: white;
   border-bottom: 3px solid #004aad;
+}
+
+/*Styling the Preloader*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #fff;
+}
+#preloader div#load-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  background: #004aad;
+  animation-name: loading;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+#preloader button {
+  position: absolute;
+  top: 2em;
+  right: 5%;
+  width: 15em;
+  height: 3.5em;
+  border: 1px solid #21130d;
+  border-radius: 5px;
+  color: #21130d;
+  outline-color: #21130d;
+  background: transparent;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+#preloader button:hover {
+  color: white;
+  background: #21130d;
+}
+#preloader h1 {
+  color: #004aad;
+  font-size: 8em;
+}
+#preloader div.details {
+  text-align: center;
+}
+#preloader div.details p {
+  font-size: 2em;
+}
+
+#preloader.hidden {
+  display: none;
 }
 
 div#back-to-top {

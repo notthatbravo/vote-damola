@@ -37,6 +37,21 @@
 
     </head>
     <body>
+        <div id="preloader">
+            <div id="load-progress"></div>
+            
+            <button type="button" name="button" id="disable-preloader-btn">Disable Preloader</button>
+
+            <h1 data-aos="fade-up" data-aos-duration="1000">#VoteDamola</h1>
+
+            <div class="details">
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">August 25th, 2021</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">09:00 - 14:00</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">UNILAG Student Portal</p>
+            </div>
+        </div>
+
+
         <header>
             <a href=".."><img src="assets/img/logo.png" alt="logo"></a>
         </header>
@@ -297,6 +312,40 @@
 
         <!-- Animate On Scroll Library -->
         <script>AOS.init();</script>
+
+
+        <!-- Preloader -->
+        <!-- Copied Code. No idea how it works -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+    		$(document).ready(function(){
+    		});
+    		$("nav div a.a").on("click" , function(e){
+    		e.preventDefault();
+    		$("body , html").animate({
+    		  scrollTop: $(this.hash).offset().top
+    		} , 1000);
+    		});
+    		  // Preloader
+    			$(window).on('load', function() {
+    			  if ($('#preloader').length) {
+    				$('#preloader').delay(10000).fadeOut('slow', function() {
+    				  $(this).remove();
+    				});
+    			  }
+    			});
+    	</script>
+
+        <!-- disable preloader manually -->
+        <script type="text/javascript">
+            disablePreloaderBtn = document.querySelector('#disable-preloader-btn');
+            preloader = document.querySelector('#preloader');
+
+            disablePreloaderBtn.addEventListener('click', function() {
+                preloader.classList.toggle('hidden');
+            })
+        </script>
+
 
         <script>
             // Back to top button
