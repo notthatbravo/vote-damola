@@ -32,11 +32,37 @@ slide2Button.addEventListener('click', function() {
 })
 
 
+slide1Button.addEventListener('click', function() {
+    slide2Button.classList.remove('active');
+    slide3Button.classList.remove('active');
+
+    slide1Button.classList.add('active');
+    slide1.classList.add('active');
+
+    slide2.classList.remove('active');
+    slide3.classList.remove('active');
+});
+
+
+slide2Button.addEventListener('click', function() {
+    slide1Button.classList.remove('active');
+    slide3Button.classList.remove('active');
+
+    slide2Button.classList.add('active');
+    slide2.classList.add('active');
+
+    slide1.classList.remove('active');
+    slide3.classList.remove('active');
+});
+
+
 slide3Button.addEventListener('click', function() {
     slide1Button.classList.remove('active');
     slide2Button.classList.remove('active');
 
     slide3Button.classList.add('active');
     slide3.classList.add('active');
-    slide3.style.animationName = "active";
-})
+
+    slide1.classList.remove('active');
+    slide2.classList.remove('active');
+});

@@ -65,15 +65,6 @@ img {
   }
 }
 
-@keyframes active {
-  from {
-    background: black;
-  }
-  to {
-    background: red;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -153,6 +144,9 @@ footer div.column a:hover i {
 }
 footer div.column:nth-of-type(2) p a {
   padding: 0 2.5%;
+}
+footer div.column:nth-of-type(2) p a:first-of-type {
+  padding-left: 0;
 }
 footer div.column:nth-of-type(2) p span {
   color: #dcba3c;
@@ -297,7 +291,7 @@ section.hero div.carousel-indicators {
   place-items: center;
   right: 5%;
   height: 15em;
-  margin-top: 5%;
+  margin-top: -18%;
 }
 section.hero div.carousel-indicators span {
   display: grid;
@@ -320,16 +314,12 @@ section.hero div.carousel-indicators span.active {
 }
 section.hero div.slide-container {
   height: 0;
+  opacity: 0;
   overflow: hidden;
-  margin-right: 5%;
-  transition: 0.4s ease-in-out;
-  animation-duration: 10s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
+  transition: 1s ease-in-out;
 }
 section.hero div.slide-container h1 {
   margin-top: 10%;
-  margin-right: 40%;
   font-size: 3.8em;
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -340,6 +330,7 @@ section.hero div.slide-container h1 span {
 }
 section.hero div.slide-container.active {
   height: fit-content;
+  opacity: 1;
 }
 
 section.about img {
@@ -541,6 +532,7 @@ section.newsletter form input {
   padding: 0 2.5%;
   border: 1px solid #21130d;
   border-radius: 10px;
+  color: #21130d;
   transition: 0.4s ease-in-out;
 }
 section.newsletter form input.longer {
@@ -570,6 +562,27 @@ section.newsletter form button:hover {
 
   div#back-to-top {
     bottom: 2.5%;
+  }
+
+  section.hero div.slide-container {
+    margin: 0;
+    text-align: center;
+  }
+  section.hero div.slide-container h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  section.hero div.carousel-indicators {
+    position: unset;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: unset;
+    margin: 10% auto;
+  }
+  section.hero div.carousel-indicators span {
+    flex: 33.33%;
+    margin: 0 2.5%;
   }
 
   section.about img {
