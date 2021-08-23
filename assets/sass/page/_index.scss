@@ -95,6 +95,7 @@ div#back-to-top:hover {
 
 
 section.hero {
+    height: 100vh;
     padding-top: 10em;
     color: white;
     background: $dark-blue;
@@ -462,6 +463,9 @@ section.newsletter {
 
 
     section.hero {
+        display: grid;
+        place-items: center;
+        
         div.slide-container {
             margin: 0;
             text-align: center;
