@@ -65,6 +65,15 @@ img {
   }
 }
 
+@keyframes active {
+  from {
+    background: black;
+  }
+  to {
+    background: red;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -120,6 +129,11 @@ button:hover {
   background: transparent;
 }
 
+@media (max-width: 800px) {
+  section h2 {
+    font-size: 2em;
+  }
+}
 footer {
   padding: 2% 5%;
   color: white;
@@ -154,6 +168,22 @@ footer div.column:last-of-type a i {
   transition: 0.4s ease-in-out;
 }
 
+@media (max-width: 800px) {
+  footer div.column {
+    margin: 10% 0;
+  }
+  footer div.column:nth-of-type(2) p a {
+    display: block;
+    margin: 5% 0;
+    padding: 0;
+  }
+  footer div.column:nth-of-type(2) p span {
+    display: none;
+  }
+  footer div.column:last-of-type {
+    text-align: left;
+  }
+}
 header {
   position: fixed;
   z-index: 2;
@@ -163,6 +193,14 @@ header {
   border-bottom: 3px solid #004aad;
 }
 
+@media (max-width: 800px) {
+  header {
+    padding: 5%;
+  }
+  header img {
+    width: 60%;
+  }
+}
 /*Styling the Preloader*/
 #preloader {
   position: fixed;
@@ -285,6 +323,9 @@ section.hero div.slide-container {
   overflow: hidden;
   margin-right: 5%;
   transition: 0.4s ease-in-out;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
 section.hero div.slide-container h1 {
   margin-top: 10%;
@@ -500,6 +541,10 @@ section.newsletter form input {
   padding: 0 2.5%;
   border: 1px solid #21130d;
   border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+section.newsletter form input.longer {
+  width: 30em;
 }
 section.newsletter form ::placeholder {
   color: #21130d;
@@ -509,6 +554,71 @@ section.newsletter form button {
 }
 section.newsletter form button:hover {
   color: #21130d;
+}
+
+@media (max-width: 800px) {
+  #preloader div.load-progress {
+    height: 5px;
+  }
+  #preloader h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+  #preloader div.details p {
+    font-size: 1.5em;
+  }
+
+  div#back-to-top {
+    bottom: 2.5%;
+  }
+
+  section.about img {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  section.timeline {
+    padding-bottom: 20%;
+  }
+  section.timeline div.container {
+    padding-left: 10%;
+  }
+  section.timeline div.container div.card::before {
+    width: 20px;
+    height: 20px;
+    left: 5%;
+  }
+  section.timeline div.container div.card::after {
+    display: none;
+  }
+
+  section.manifesto div.container {
+    margin-top: 40%;
+  }
+  section.manifesto div.container div.card-container {
+    margin: 30% 0;
+  }
+
+  section.testimonials div.container div.card {
+    margin: 20% 0;
+  }
+
+  section.join-group {
+    padding: 10% 5%;
+  }
+  section.join-group p#subheading {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+
+  section.newsletter form input {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  section.newsletter form input.longer {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

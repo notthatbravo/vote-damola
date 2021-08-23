@@ -3,7 +3,7 @@
     <head>
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-        <meta name = "description" content="Vote Damola as the President for the University of Lagos Engineering Society '21">
+        <meta name = "description" content="Vote Damola Agboola as the President for the University of Lagos Engineering Society '21">
         <meta name="keywords" content="jamb, jamb website, utme, university, universities, nigeria, direct entry, efacility, caps">
 
         <!-- Twitter Card -->
@@ -65,29 +65,29 @@
 
         <section class="hero" id="top">
             <div class="carousel-indicators" data-aos="fade-left" data-aos-duration = "600">
-                    <span class="active">01</span>
-                    <span>02</span>
-                    <span>03</span>
+                    <span class="carousel-button slide-1-btn active">01</span>
+                    <span class="carousel-button slide-2-btn">02</span>
+                    <span class="carousel-button slide-3-btn">03</span>
             </div>
 
-            <div class="slide-container active">
+            <div class="slide-container slide-1 active">
                 <h1 data-aos="fade-up">
                     Introducing a New Wave
                     <span class="bold">of ULES Academics</span>
                 </h1>
             </div>
 
-            <div class="slide-container">
+            <div class="slide-container slide-2">
                 <h1>
-                    FFF
-                    <span class="bold">of ULES Academics</span>
+                    Changing it for
+                    <span class="bold">Iyalaya anybody</span>
                 </h1>
             </div>
 
-            <div class="slide-container">
+            <div class="slide-container slide-3">
                 <h1>
-                    PQR
-                    <span class="bold">of ULES Academics</span>
+                    You know
+                    <span class="bold">I was kidding</span>
                 </h1>
             </div>
         </section>
@@ -108,12 +108,12 @@
 
 
         <section class="timeline">
-            <h2>Timeline and Experience</h2>
+            <h2>Timeline & Experience</h2>
 
             <div class="container">
                 <div class="card">
                     <h3>Class Representative</h3>
-                    <h4>Department of Chemical Engineering</h4>
+                    <h4>Chemical Engineering</h4>
                     <p>2015 - Present</p>
                 </div>
 
@@ -246,7 +246,7 @@
 
                     <h3>Salim</h3>
                     <h4>Student,</h4>
-                    <h5>Elect. & Elect. Engineering</h5>
+                    <h5>Elect. & Elect. Engr.</h5>
 
                     <p>Damola has been a fantastic mentor to my mates and I, opening our eyes to new stages of opportunities and strengths whilst supporting us academically.</p>
                 </div>
@@ -274,7 +274,7 @@
         </section>
 
         <section class="blue-bg join-group">
-            <h2>Join Damola's Campaign Group</h2>
+            <h2>Join Damola's Campaign&nbsp;Group</h2>
             <p id="subheading">Be a part of the light that shines on ULESites.</p>
 
             <a href="https://bit.ly/JoinDamola" target="_blank" rel="noreferrer noopener"><button>Become a Volunteer</button></a>
@@ -284,7 +284,7 @@
         <section class="newsletter">
                     <h2>Join the Newsletter</h2>
                     <form action="" method="post">
-                        <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                        <input type="email" name="email" id="emailInput" placeholder="Enter your email address" required>
 
                         <button type="submit" name="button">Submit</button>
                     </form>
@@ -324,5 +324,24 @@
 
         <!-- Back to top -->
         <script src="assets/scripts/back-to-top.js" charset="utf-8"></script>
+
+
+        <!-- Newsletter Email input -->
+        <script>
+            inputField = document.querySelector('#emailInput');
+
+            inputField.addEventListener('keyup', function () {
+                emailChars = inputField.value;
+
+                if (emailChars.length >= 27) {
+                    console.log(emailChars);
+                    inputField.classList.add('longer');
+                }
+
+                else {
+                    inputField.classList.remove('longer');
+                }
+            })
+        </script>
     </body>
 </html>

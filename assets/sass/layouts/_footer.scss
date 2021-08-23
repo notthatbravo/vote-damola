@@ -44,3 +44,33 @@ footer {
         }
     }
 }
+
+
+
+
+@media (max-width: 800px) {
+    footer {
+        div.column {
+            margin: 10% 0;
+        }
+
+        div.column:nth-of-type(2) {
+
+            p {
+                a {
+                    display: block;
+                    margin: 5% 0;
+                    padding: 0;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+
+        div.column:last-of-type {
+            text-align: left;
+        }
+    }
+}

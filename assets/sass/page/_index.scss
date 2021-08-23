@@ -135,6 +135,9 @@ section.hero {
         overflow: hidden;
         margin-right: 5%;
         transition: 0.4s ease-in-out;
+        animation-duration: 10s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
 
         h1 {
             margin-top: 10%;
@@ -152,7 +155,6 @@ section.hero {
 
     div.slide-container.active {
         height: fit-content;
-        // background: red;
     }
 }
 
@@ -413,6 +415,11 @@ section.newsletter {
             padding: 0 2.5%;
             border: 1px solid $dark-brown;
             border-radius: 10px;
+            transition: 0.4s ease-in-out;
+        }
+
+        input.longer {
+            width: 30em;
         }
 
         ::placeholder {
@@ -425,6 +432,106 @@ section.newsletter {
 
         button:hover {
             color: $dark-brown;
+        }
+    }
+}
+
+
+
+// Responsiveness Begins
+@media(max-width:800px) {
+    #preloader {
+        div.load-progress {
+            height: 5px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 500;
+        }
+
+        div.details {
+            p {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+
+    div#back-to-top {
+        bottom: 2.5%;
+    }
+
+
+
+    section.about {
+        img {
+            float: none;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+    section.timeline {
+        padding-bottom: 20%;
+
+        div.container {
+            padding-left: 10%;
+
+            div.card::before {
+                width: 20px;
+                height: 20px;
+                left: 5%;
+            }
+
+            div.card::after {
+                display: none;
+            }
+        }
+    }
+
+
+    section.manifesto {
+        div.container {
+            margin-top: 40%;
+
+            div.card-container {
+                margin: 30% 0;
+            }
+        }
+    }
+
+
+    section.testimonials {
+        div.container {
+            div.card {
+                margin: 20% 0;
+            }
+        }
+    }
+
+
+    section.join-group {
+        padding: 10% 5%;
+
+        p#subheading {
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+    }
+
+
+    section.newsletter {
+        form {
+            input {
+                width: 100%;
+                margin-bottom: 10%;
+            }
+
+            input.longer {
+                width: 100%;
+            }
         }
     }
 }

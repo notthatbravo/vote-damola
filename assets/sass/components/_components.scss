@@ -57,3 +57,13 @@ button:hover {
 	border: 1px solid $dark-brown;
 	background: transparent;
 }
+
+
+
+@media (max-width: 800px) {
+	section {
+		h2 {
+			font-size: 2em;
+		}
+	}
+}

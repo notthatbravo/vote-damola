@@ -11,3 +11,16 @@ div#preloader {
         }
     }
 }
+
+
+section.hero {
+    @keyframes active {
+        from {
+            background: black;
+        }
+
+        to {
+            background: red;
+        }
+    }
+}
