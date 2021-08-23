@@ -578,11 +578,12 @@ section.newsletter form button:hover {
     justify-content: center;
     width: 50%;
     height: unset;
-    margin: 10% auto;
+    margin: 20% auto 10%;
   }
   section.hero div.carousel-indicators span {
     flex: 33.33%;
     margin: 0 2.5%;
+    transition: 1s ease-in-out;
   }
 
   section.about img {
